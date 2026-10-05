@@ -1,0 +1,50 @@
+.admin-management-grid,
+.analytics-page,
+.analytics-page > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.admin-management-grid > .glass-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.admin-user-row > div:first-child {
+  flex: 1 1 180px;
+  min-width: 0;
+}
+
+.admin-user-row > div:first-child > div:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.admin-user-row > div:last-child {
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+
+.admin-user-row select {
+  max-width: 100%;
+}
+
+.analytics-table-card {
+  min-width: 0;
+}
+
+.analytics-table-card .responsive-table-scroll {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 620px) {
+  .admin-user-row > div:last-child {
+    flex: 1 1 100%;
+    align-items: stretch !important;
+  }
+
+  .admin-user-row > div:last-child select {
+    width: 100% !important;
+  }
+}
